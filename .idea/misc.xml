@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/a01d_svg.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/a01n_svg.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/a02d_svg.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/a02n_svg.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/a09d_svg.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/a11d_svg.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/a13d_svg.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/close.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/cloud.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/humidity.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/location.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/night.xml" value="0.1" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/sunrise.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/temperature.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable-v24/wind.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/launcher_background.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/drawable/launcher_foreground.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.11200000000000002" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/dialog_custom_progress.xml" value="0.264" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/layout_dashboard.xml" value="0.176" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/layout/layout_location.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/menu/menu_main.xml" value="0.1" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/pruth/AndroidStudioProjects/WeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14351851851851852" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

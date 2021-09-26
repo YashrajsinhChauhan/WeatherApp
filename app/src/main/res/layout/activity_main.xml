@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_view_marginStartEnd"
+            android:layout_marginTop="@dimen/card_view_marginTop"
+            android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+            android:backgroundTint="@color/location_color"
+            app:cardCornerRadius="@dimen/card_view_corner_radius"
+            app:cardElevation="@dimen/card_view_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/card_view_content_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_location"
+                        android:layout_width="@dimen/identification_image_size"
+                        android:layout_height="@dimen/identification_image_size"
+                        android:layout_marginEnd="@dimen/identification_image_marginEnd"
+                        android:contentDescription="@string/image_contentDescription"
+                        app:srcCompat="@drawable/location" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/label_text_size"
+                            android:textStyle="bold"
+                            tools:text="Name" />
+
+                        <TextView
+                            android:id="@+id/tv_country"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/value_text_size"
+                            tools:text="Country" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_margin="@dimen/divider_margin"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/sunrise_marginTop"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_sunrise"
+                            android:layout_width="@dimen/identification_image_size"
+                            android:layout_height="@dimen/identification_image_size"
+                            android:layout_marginEnd="@dimen/identification_image_marginEnd"
+                            android:contentDescription="@string/image_contentDescription"
+                            app:srcCompat="@drawable/sunrise" />
+
+                        <TextView
+                            android:id="@+id/tv_sunrise_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/value_text_size"
+                            tools:text="Sunrise" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/sunset_marginStart"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_sunset"
+                            android:layout_width="@dimen/identification_image_size"
+                            android:layout_height="@dimen/identification_image_size"
+                            android:layout_marginEnd="@dimen/identification_image_marginEnd"
+                            android:contentDescription="@string/image_contentDescription"
+                            app:srcCompat="@drawable/sunset" />
+
+                        <TextView
+                            android:id="@+id/tv_sunset_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/value_text_size"
+                            tools:text="Sunset" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_view_marginTop"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_view_marginStartEnd"
+            android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+            android:layout_weight="1"
+            android:backgroundTint="@color/weather_color"
+            app:cardCornerRadius="@dimen/card_view_corner_radius"
+            app:cardElevation="@dimen/card_view_elevation">
+
+            <RelativeLayout
+                android:id="@+id/weatherView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMain"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="25dp"
+                    app:srcCompat="@drawable/snowflake" />
+
+                <TextView
+                    android:id="@+id/tvTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    tools:text="25°" />
+
+                <TextView
+                    android:id="@+id/tvMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTemp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    tools:text="Weather" />
+
+                <TextView
+                    android:id="@+id/tvMainDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMain"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:text="condition" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_view_marginTop"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_view_marginStartEnd"
+            android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+            android:layout_weight="1"
+            android:backgroundTint="@color/humidity_color"
+            app:cardCornerRadius="@dimen/card_view_corner_radius"
+            app:cardElevation="@dimen/card_view_elevation">
+
+            <RelativeLayout
+                android:id="@+id/humidityView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivHumidity"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/humidity" />
+
+                <TextView
+                    android:id="@+id/tvHumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivHumidity"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/humidity"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvHumidity"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    tools:text="per cent" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_view_marginStartEnd"
+            android:layout_marginEnd="@dimen/card_view_marginStartEnd"
+            android:layout_weight="1"
+            android:backgroundTint="@color/wind_color"
+            app:cardCornerRadius="@dimen/card_view_corner_radius"
+            app:cardElevation="@dimen/card_view_elevation">
+
+            <RelativeLayout
+                android:id="@+id/rootView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivWind"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="66dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/wind" />
+
+
+                <TextView
+                    android:id="@+id/tvSpeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivWind"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    tools:text="Wind" />
+
+                <TextView
+                    android:id="@+id/tvSpeedUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSpeed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/miles_per_hour"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</LinearLayout>
+
